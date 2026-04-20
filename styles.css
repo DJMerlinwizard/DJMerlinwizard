@@ -1,0 +1,278 @@
+:root {
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --text: #122236;
+  --muted: #4b5b70;
+  --primary: #0f62fe;
+  --primary-dark: #0b4fd1;
+  --accent: #e5efff;
+  --success: #18794e;
+  --radius: 14px;
+  --shadow: 0 20px 45px rgba(16, 35, 64, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  background: radial-gradient(circle at top right, #f5f9ff, #edf3ff 45%, #f7f9fc 80%);
+  padding-bottom: 2.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2.2rem 0;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 0.3rem 0 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.subcopy {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 56ch;
+}
+
+.highlights {
+  padding: 0;
+  margin: 1.4rem 0 0;
+  list-style: none;
+}
+
+.highlights li {
+  margin: 0.6rem 0;
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.highlights li::before {
+  content: '✓';
+  color: var(--success);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+
+.lead-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.6rem;
+}
+
+.lead-card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.lead-card p {
+  margin-top: 0.4rem;
+  color: var(--muted);
+}
+
+form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #cfdae8;
+  border-radius: 10px;
+  padding: 0.72rem 0.82rem;
+  background: #fff;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(15, 98, 254, 0.18);
+}
+
+.btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline {
+  border: 1px solid #c8d8f1;
+  color: var(--text);
+  background: #fff;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.form-disclaimer {
+  font-size: 0.78rem;
+  color: #5d6b80;
+  margin: 0.2rem 0 0;
+}
+
+.form-message {
+  min-height: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form-message.success {
+  color: var(--success);
+}
+
+.form-message.error {
+  color: #b42318;
+}
+
+.trust-strip {
+  margin-top: 1rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 10px 30px rgba(16, 35, 64, 0.06);
+}
+
+.trust-strip strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.trust-strip span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.process {
+  padding: 3rem 0;
+}
+
+.process h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.steps article {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 22px rgba(16, 35, 64, 0.08);
+}
+
+.steps p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.footer {
+  background: #0f2037;
+  color: #d9e3f2;
+  padding: 2rem 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
+  color: #b4c6df;
+}
+
+@media (max-width: 900px) {
+  .hero-content,
+  .steps,
+  .trust-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-bottom: 1rem;
+  }
+
+  .lead-card {
+    margin-top: 0.6rem;
+  }
+}
