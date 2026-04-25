@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meridian Mortgage Advisors | Free Rate Check</title>
+    <meta
+      name="description"
+      content="Get a personalized mortgage rate estimate in minutes. Submit your details and a licensed mortgage broker will contact you."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="brand">Meridian Mortgage Advisors</div>
+        <a href="#lead-form" class="btn btn-outline">Get Started</a>
+      </nav>
+      <div class="hero-content container">
+        <div class="hero-copy">
+          <p class="eyebrow">Trusted Home Financing Support</p>
+          <h1>Find Your Best Mortgage Rate Without the Guesswork.</h1>
+          <p class="subcopy">
+            Share a few details and a licensed mortgage broker will send a
+            customized financing strategy tailored to your goals.
+          </p>
+          <ul class="highlights">
+            <li>No impact credit pre-qualification</li>
+            <li>Purchase and refinance options</li>
+            <li>Fast response in under 1 business day</li>
+          </ul>
+        </div>
+
+        <aside class="lead-card" id="lead-form">
+          <h2>Request Your Free Rate Check</h2>
+          <p>Complete this quick form and we’ll reach out shortly.</p>
+          <form id="mortgage-lead-form" novalidate>
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Jane Smith" required />
+            </label>
+            <label>
+              Email Address
+              <input
+                type="email"
+                name="email"
+                placeholder="jane@email.com"
+                required
+              />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" placeholder="(555) 123-4567" required />
+            </label>
+            <label>
+              Loan Goal
+              <select name="goal" required>
+                <option value="">Select one</option>
+                <option>Buying a home</option>
+                <option>Refinancing</option>
+                <option>Investment property</option>
+              </select>
+            </label>
+            <label>
+              Estimated Credit Score
+              <select name="credit" required>
+                <option value="">Select one</option>
+                <option>760+</option>
+                <option>700-759</option>
+                <option>640-699</option>
+                <option>Below 640</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">
+              Get My Free Estimate
+            </button>
+            <p class="form-disclaimer">
+              By submitting this form, you consent to be contacted by phone,
+              email, or text regarding mortgage options.
+            </p>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </aside>
+      </div>
+    </header>
+
+    <section class="trust-strip container">
+      <div>
+        <strong>4.9/5</strong>
+        <span>Average client satisfaction rating</span>
+      </div>
+      <div>
+        <strong>1,800+</strong>
+        <span>Families helped with financing</span>
+      </div>
+      <div>
+        <strong>20+</strong>
+        <span>Lending partners for competitive rates</span>
+      </div>
+    </section>
+
+    <section class="process container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <article>
+          <h3>1. Share your details</h3>
+          <p>Tell us your goals and basic financial profile.</p>
+        </article>
+        <article>
+          <h3>2. Get matched options</h3>
+          <p>We compare programs from multiple lenders.</p>
+        </article>
+        <article>
+          <h3>3. Lock your best fit</h3>
+          <p>Choose the loan strategy with confidence.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Meridian Mortgage Advisors. All rights reserved.</p>
+        <p class="footer-note">
+          Meridian Mortgage Advisors is an independent brokerage. This is not a
+          commitment to lend. Terms subject to approval.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
